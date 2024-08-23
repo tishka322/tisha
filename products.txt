@@ -1,0 +1,4 @@
+Cucumber, 5.3, Vegetables
+Apple, 0.3, Fruits
+Peach, 2.0, Fruits
+Apple1, 0.4, Fruits
