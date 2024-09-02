@@ -11,22 +11,12 @@ class WordsFinder:
 
 
     def get_all_words(self):
-
-        # Создайте пустой словарь all_words.
         all_words = {}
-
-        # Переберите названия файлов и открывайте каждый из них, используя оператор with.
         for file_name in self.file_names:
             with open(file_name, 'r', encoding='utf-8') as file:
                 words = []
                 for line in file:
-
-                    # Для каждого файла считывайте единые строки,
-                    # переводя их в нижний регистр (метод lower()).
                     line = line.lower()
-
-                    # Избавьтесь от пунктуации [',', '.', '=', '!', '?', ';', ':', ' - ']
-                    # в строке.
                     punctuation = [',', '.', '=', '!', '?', ';', ':']
                     for punct in punctuation:
                         line = line.replace(punct, '')
